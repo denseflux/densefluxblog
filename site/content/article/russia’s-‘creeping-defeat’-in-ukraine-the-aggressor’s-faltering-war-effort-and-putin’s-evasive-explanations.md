@@ -2,7 +2,11 @@
 title: "Russia’s ‘Creeping Defeat’ in Ukraine: The aggressor’s faltering war
   effort and Putin’s evasive explanations"
 tags:
-  - war
+  - Putin
+  - Ukraine
+  - Russia
+  - Crimea
+  - "Nuclear War"
 author: Harry
 date: 2023-05-31T17:34:17.765Z
 description: An in-depth look at Russia's increasingly likely defeat in Ukraine,
