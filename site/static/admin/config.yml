@@ -78,6 +78,6 @@ collections: # A list of collections the CMS should be able to edit
             name: values
             widget: list
             fields:
-              - {label: Heading, name: name, widget: string}
-              - {label: Text, name: bio, widget: text}
+              - {label: Name, name: name, widget: string}
+              - {label: Bio, name: bio, widget: text}
               - {label: Image, name: imageUrl, widget: image}
