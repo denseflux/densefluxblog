@@ -31,13 +31,14 @@ collections: # A list of collections the CMS should be able to edit
         name: "content"
         widget: "list"
         fields:
-          name: "body"
-          widget: "object"
-          fields: 
-            {label: "Text", name: "text", widget: "markdown", required: false}
-            {label: "Image", name: "image", widget: "image", required: false}
-            {label: "video", name: "image", widget: "image", required: false}
-            {label: "Embed", name: "image", widget: "code", required: false}
+          - label: "Body"
+            name: "body"
+            widget: "object"
+            fields: 
+              - {label: "Text", name: "text", widget: "markdown", required: false}
+              - {label: "Image", name: "image", widget: "image", required: false}
+              - {label: "video", name: "image", widget: "image", required: false}
+              - {label: "Embed", name: "image", widget: "code", required: false}
   - name: "pages"
     label: "Pages"
     files:
@@ -77,9 +78,9 @@ collections: # A list of collections the CMS should be able to edit
               - label: Text
                 name: text
                 widget: text
-      - file: "site/content/products/_index.md"
-        label: "Products Page"
-        name: "products"
+      - file: "site/content/about/_index.md"
+        label: "About"
+        name: "about"
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Image, name: image, widget: image}
