@@ -7,7 +7,7 @@ public_folder: "img"
 
 collections: # A list of collections the CMS should be able to edit
   - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "Post" # Used in the UI, ie.: "New Post"
+    label: "Blog post" # Used in the UI, ie.: "New Post"
     folder: "site/content/post" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
@@ -16,6 +16,28 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Intro Blurb", name: "description", widget: "text"}
       - {label: "Image", name: "image", widget: "image", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
+  - name: "article" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Article" # Used in the UI, ie.: "New Post"
+    folder: "site/content/article" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Tags", name: "tags", widget: "list"}
+      - {label: "Image", name: "image", widget: "image", required: false}
+      - {label: "Author", name: "author", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Summary", name: "description", widget: "markdown", required: false}
+      - label: "Content"
+        name: "content"
+        widget: "list"
+        fields:
+          name: "body"
+          widget: "object"
+          fields: 
+            {label: "Text", name: "text", widget: "markdown", required: false}
+            {label: "Image", name: "image", widget: "image", required: false}
+            {label: "video", name: "image", widget: "image", required: false}
+            {label: "Embed", name: "image", widget: "code", required: false}
   - name: "pages"
     label: "Pages"
     files:
