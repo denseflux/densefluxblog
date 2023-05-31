@@ -2,13 +2,13 @@
 title: Team
 image: img/about-direct-sourcing.jpg
 values:
-  - name: Team member 2
-    bio: Tweet as someone else
+  - heading: Team member 2
+    text: Tweet as someone else
     imageUrl: /img/about-single-origin.jpg
-  - name: Team member 1
-    bio: Tweet as @someone
-    imageUrl: img/about-jumbotron.jpg
-  - name: Team member 3
-    bio: Tweet as @something
+  - heading: Team member 3
+    text: Tweet as @something
     imageUrl: /img/about-sustainable-farming.jpg
+  - heading: Team member 1
+    text: Tweet as @someone
+    imageUrl: img/about-jumbotron.jpg
 ---
